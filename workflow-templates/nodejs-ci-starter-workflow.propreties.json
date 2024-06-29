@@ -1,0 +1,8 @@
+{
+    "name": "Skywalker Demo Organizational NodeJS CI",
+    "description": "Skywalker Organization NodeJS init CI starter workflow",
+    "iconName": "skywalker-icon",
+    "categories": [
+        "NPM Config"
+    ]
+}

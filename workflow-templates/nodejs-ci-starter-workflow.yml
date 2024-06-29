@@ -7,4 +7,21 @@ on:
     branches: [ $default-branch ]
 
 jobs:
-  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+        with:
+          nade-version: '20.x'
+          
+          
+      - name: Install Testing
+        run: npm install
+
+
+      - name: Unit Testing
+        run: npm test --if-present
+
+      - name: Run coverage
+        run: npm run coverage --if-present
